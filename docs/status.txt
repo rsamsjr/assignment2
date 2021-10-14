@@ -1,0 +1,23 @@
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+
+(base) robertsams@Roberts-MacBook-Pro assignment2 % git commit
+[master 7e9bcd2] Updated information files
+ 1 file changed, 2 insertions(+)
+(base) robertsams@Roberts-MacBook-Pro assignment2 % git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) robertsams@Roberts-MacBook-Pro assignment2 % mkdir docs
+(base) robertsams@Roberts-MacBook-Pro assignment2 % ls
+Bicycle.cpp		Car.h			README.md		docs
+Bicycle.h		PoweredVehicle.cpp	Vehicle.cpp		main.cpp
+Car.cpp			PoweredVehicle.h	Vehicle.h
+(base) robertsams@Roberts-MacBook-Pro assignment2 % cd docs
+(base) robertsams@Roberts-MacBook-Pro docs % nano status.txt
+(base) robertsams@Roberts-MacBook-Pro docs % 

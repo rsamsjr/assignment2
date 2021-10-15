@@ -1,0 +1,85 @@
+1. pasted contents of the git console
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+
+(base) robertsams@Roberts-MacBook-Pro assignment2 % git commit
+[master 7e9bcd2] Updated information files
+ 1 file changed, 2 insertions(+)
+(base) robertsams@Roberts-MacBook-Pro assignment2 % git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) robertsams@Roberts-MacBook-Pro assignment2 % mkdir docs
+(base) robertsams@Roberts-MacBook-Pro assignment2 % ls
+Bicycle.cpp		Car.h			README.md		docs
+Bicycle.h		PoweredVehicle.cpp	Vehicle.cpp		main.cpp
+Car.cpp			PoweredVehicle.h	Vehicle.h
+(base) robertsams@Roberts-MacBook-Pro assignment2 % cd docs
+(base) robertsams@Roberts-MacBook-Pro docs % nano status.txt
+(base) robertsams@Roberts-MacBook-Pro docs % nano status.txt
+(base) robertsams@Roberts-MacBook-Pro docs % cd ..     
+(base) robertsams@Roberts-MacBook-Pro assignment2 % git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) robertsams@Roberts-MacBook-Pro assignment2 % git add docs/
+(base) robertsams@Roberts-MacBook-Pro assignment2 % git commit
+[master 7958924] Updated docs folder
+ 1 file changed, 23 insertions(+)
+ create mode 100644 docs/status.txt
+(base) robertsams@Roberts-MacBook-Pro assignment2 % git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) robertsams@Roberts-MacBook-Pro assignment2 % git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 1.09 KiB | 558.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/rsamsjr/assignment2.git
+   f4975e5..7958924  master -> master
+(base) robertsams@Roberts-MacBook-Pro assignment2 % 
+
+2. 9 commits found using "git log origin/master"
+
+3. README.md was last modified 2021-10-13 20:08:27 -0400
+   used git command "git log -1 --pretty="format:%ci" README.md"
+
+4. easily merge versions at a later date, isolate code from others work
+
+5. git log shows commits, history and filter the logs
+   status is to inspect the working directory and see what changes are waiting to be commited
+
+6. git log --raw shows all the commits made and descriptions and Vehicle.h can be searched for
+   git log --Vehcile.h shows all the commits to Vehicle.h file
+
+7. to find the word file use the git command "git log -S file"
+
+8. Inheritance is when a new data type is defined as an extension of a previous data type
+   Polymorphism is the ability to have a method work for differenct objects. At run time the system
+   chooses which method will be used for the object.
+   Encapsulation is containing the methods and data hidden inside the class but providing getters and
+   setters for public access
+
+9. The main difference would be 2 repositories per developer and a single integration manager for the integration workflow
+
+10. The lieutenant repo merges the changes required
+
+Git Lab Tutorials 10/11-10/13
+GitHub setup ~10/03/21
+
+https://github.com/rsamsjr/assignment2.git
